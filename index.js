@@ -1,17 +1,32 @@
-const express = require('express')
-const cors = require('cors')
-const bodyParser = require('body-parser')
-const dotenv = require('dotenv')
-const app = express()
-dotenv.config()
+const express = require("express");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const dotanv = require("dotenv");
+const { bgCyan } = require("colors");
+require("colors");
+const connectDb = require("./config/config");
+//dotenv config
+dotanv.config();
+//db config
+connectDb();
+//rest object
+const app = express();
 
-const PORT = process.env.SERVER_PORT
+//middlwares
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(morgan("dev"));
 
-app.use(bodyParser.json())
-app.use(cors())
-app.use(express.json())
-app.use(bodyParser.urlencoded({extended: true}))
+//routes
+app.get("/", (req, res) => res.status(200).send("Hello"))
 
+//port
+const PORT = process.env.PORT || 8080;
+
+//listen
 app.listen(PORT, () => {
-    console.log(PORT+' port is open for todo server');
-})
+  console.log(`Server Running On Port ${PORT}`.bgCyan.white);
+});
