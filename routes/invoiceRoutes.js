@@ -1,6 +1,5 @@
-const Invoice = require("../models/invoiceModel");
-
 const express = require("express");
+const Invoice = require("../models/invoiceModel");
 const router = express.Router();
 
 // Add Invoice

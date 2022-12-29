@@ -5,7 +5,7 @@ API for Krusty Krab Server.
 ## prerequisites
 
 1. Clone this Repo / Pull Main
-2. install node modules
+2. Install node modules
 
    ```js
     npm i
@@ -26,10 +26,10 @@ API for Krusty Krab Server.
 4. To use seeder use
 
    ```js
-   npm seed
+   npm run seed
    ```
 
-5. if nodemon not working, do this, and try again
+5. If nodemon not working, do this, and try again
 
    ```js
     npm i -g nodemon
