@@ -21,6 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
 //routes
+const invoiceRoutes = require('./routes/invoiceRoutes');
+app.use('/bill', invoiceRoutes);
+
 app.get("/", (req, res) => res.status(200).send("Hello"))
 
 //port

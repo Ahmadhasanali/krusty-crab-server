@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+mongoose.set('strictQuery', false);
 const connectDb = () => {
     mongoose
         .connect(`mongodb+srv://test:${process.env.DB_PASSWORD}@cluster0.i2opxrl.mongodb.net/Kashier?retryWrites=true&w=majority`)
