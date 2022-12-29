@@ -6,6 +6,7 @@ const dotanv = require("dotenv");
 const { bgCyan } = require("colors");
 require("colors");
 const connectDb = require("./config/config");
+const userRoutes = require("./routes/userRoutes");
 //dotenv config
 dotanv.config();
 //db config
@@ -22,6 +23,7 @@ app.use(morgan("dev"));
 
 //routes
 app.get("/", (req, res) => res.status(200).send("Hello"))
+app.use("/users", userRoutes);
 
 //port
 const PORT = process.env.PORT || 8080;
