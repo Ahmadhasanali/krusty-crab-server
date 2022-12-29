@@ -26,6 +26,11 @@ app.use('/bill', invoiceRoutes);
 
 app.get("/", (req, res) => res.status(200).send("Hello"))
 
+//route item
+const itemRoute = require('./routes/itemRoute')
+app.use("", itemRoute)
+
+
 //port
 const PORT = process.env.PORT || 8080;
 
