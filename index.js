@@ -8,6 +8,7 @@ require("colors");
 const connectDb = require("./config/config");
 const userRoutes = require("./routes/userRoutes");
 const invoiceRoutes = require('./routes/invoiceRoutes');
+const itemRoute = require('./routes/itemRoute')
 //dotenv config
 dotanv.config();
 //db config
@@ -23,15 +24,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
 //routes
-app.use('/bill', invoiceRoutes);
-
 app.get("/", (req, res) => res.status(200).send("Hello"))
+app.use('/bill', invoiceRoutes);
 app.use("/users", userRoutes);
-
-//route item
-const itemRoute = require('./routes/itemRoute')
-app.use("/", itemRoute)
-
+app.use("/item", itemRoute)
 
 //port
 const PORT = process.env.PORT || 8080;
