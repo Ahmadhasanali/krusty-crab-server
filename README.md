@@ -1,6 +1,14 @@
 # Krusty Krab Server
 
-API for Krusty Krab Server.
+[Krusty Krab API Server.](https://kashier-krusty-krab-server.azurewebsites.net/)
+
+click [here](https://kashier-krusty-krab-server.azurewebsites.net/) to see the deployed version
+
+or copy paste this link
+
+```html
+https://kashier-krusty-krab-server.azurewebsites.net/
+```
 
 ## prerequisites
 
