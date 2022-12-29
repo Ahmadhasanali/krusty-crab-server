@@ -6,6 +6,7 @@ const dotanv = require("dotenv");
 const { bgCyan } = require("colors");
 require("colors");
 const connectDb = require("./config/config");
+const userRoutes = require("./routes/userRoutes");
 //dotenv config
 dotanv.config();
 //db config
@@ -25,6 +26,7 @@ const invoiceRoutes = require('./routes/invoiceRoutes');
 app.use('/bill', invoiceRoutes);
 
 app.get("/", (req, res) => res.status(200).send("Hello"))
+app.use("/users", userRoutes);
 
 //route item
 const itemRoute = require('./routes/itemRoute')
