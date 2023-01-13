@@ -10,14 +10,14 @@ router.get("/get-item", async (req, res) => {
     res.status(200).send(items);
   } catch (error) {
     console.log(error);
+    res.status(400).send("error", error)
   }
 });
 
 //Method - add
 router.post("/add-item", async (req, res) => {
   try {
-    const newItem = new itemModel(req.body)
-    await newItem.save()
+    const newItem = await itemModel.create(req.body)
     res.status(201).json({ message: "Item has been created!", newItem })
   } catch (error) {
     console.log(error);
@@ -32,7 +32,6 @@ router.put("/update-item", async (req, res) => {
     await itemModel.findOneAndUpdate({ _id: itemId }, req.body, {
       new: true,
     })
-
     res.status(201).json("item Updated")
   } catch (error) {
     console.log(error);

@@ -5,8 +5,7 @@ const router = express.Router();
 // Add Invoice
 router.post("/", async (req, res) => {
     try {
-      const newBill = new Invoice(req.body);
-      await newBill.save();
+      const newBill = await Invoice.create(req.body);
       res.send("Bill Created Successfully!");
     } catch (error) {
       res.send(`something went wrong ${error}`);
@@ -20,6 +19,7 @@ router.get("/", async (req, res) => {
       const bills = await Invoice.find();
       res.send(bills);
     } catch (error) {
+      res.send(`something went wrong ${error}`);
       console.log(error);
     }
   });

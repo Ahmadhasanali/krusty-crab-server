@@ -6,7 +6,6 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-
     userId: {
       type: String,
       required: true,
@@ -22,6 +21,4 @@ const userSchema = mongoose.Schema(
   { timestamp: true }
 );
 
-const Users = mongoose.model("users", userSchema);
-
-module.exports = Users;
+module.exports = mongoose.model("users", userSchema);
