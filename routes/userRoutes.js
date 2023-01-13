@@ -17,6 +17,7 @@ router.post("/login", async (req, res) => {
             });
         }
     } catch (error) {
+        res.status(400).send("error", error)
         console.log(error);
     }
 });
@@ -24,8 +25,7 @@ router.post("/login", async (req, res) => {
 //Method - POST
 router.post("/register", async (req, res) => {
     try {
-        const newUser = new userModel({ ...req.body, verified: true });
-        await newUser.save();
+        const newUser = await userModel.create({ ...req.body, verified: true });
         res.status(201).send("new User added Successfully!");
     } catch (error) {
         res.status(400).send("error", error);

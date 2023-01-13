@@ -34,6 +34,4 @@ const billSchema = mongoose.Schema(
   { timestamp: true }
 );
 
-const Bills = mongoose.model("bills", billSchema);
-
-module.exports = Bills;
+module.exports = mongoose.model("bills", billSchema);
