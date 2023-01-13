@@ -10,48 +10,48 @@ const items = [
       name: "Kelp Shake",
       price: 2,
       category: "drinks",
-      image: "https://static.wikia.nocookie.net/spongebob/images/0/05/Best_Frenemies_012.png/revision/latest?cb=20191117235659",
+      image: "https://static.wikia.nocookie.net/spongebob/images/0/05/Best_Frenemies_012.png",
     },
     {
       name: "Blood",
       price: 2,
       category: "drinks",
-      image: "https://static.wikia.nocookie.net/spongebob/images/b/b5/Blood.png/revision/latest/scale-to-width-down/350?cb=20200830120005",
+      image: "https://static.wikia.nocookie.net/spongebob/images/b/b5/Blood.png",
     },
     {
       name: "Deluxe Krabby Patty",
       price: 2,
       category: "foods",
       image:
-        "https://static.wikia.nocookie.net/spongebob/images/9/9b/Deluxe_Krabby_Patty.jpg/revision/latest?cb=20140113015823",
+        "https://static.wikia.nocookie.net/spongebob/images/9/9b/Deluxe_Krabby_Patty.jpg",
     },
     {
       name: "Chum",
       price: 2,
       category: "foods",
       image:
-        "https://static.wikia.nocookie.net/spongebob/images/e/e2/Chum_Bucket_chum_stock_art.png/revision/latest?cb=20190127145242",
+        "https://static.wikia.nocookie.net/spongebob/images/e/e2/Chum_Bucket_chum_stock_art.png",
     },
     {
       name: "Bobby Sauce",
       price: 1,
       category: "souces",
       image:
-        "https://static.wikia.nocookie.net/spongebob/images/2/2a/SB_89_Prop_Bobby_Sauce.png/revision/latest/scale-to-width-down/350?cb=20220526043017",
+        "https://static.wikia.nocookie.net/spongebob/images/2/2a/SB_89_Prop_Bobby_Sauce.png",
     },
     {
       name: "Candy",
       price: 1,
       category: "snacks",
       image:
-        "https://static.wikia.nocookie.net/spongebob/images/1/19/Life_of_Crime_130.png/revision/latest/scale-to-width-down/350?cb=20200803192803",
+        "https://static.wikia.nocookie.net/spongebob/images/1/19/Life_of_Crime_130.png",
     },
     {
       name: "Cheese",
       price: 1,
       category: "snacks",
       image:
-        "https://static.wikia.nocookie.net/spongebob/images/8/84/The_Masterpiece_015.png/revision/latest/scale-to-width-down/350?cb=20211113152459",
+        "https://static.wikia.nocookie.net/spongebob/images/8/84/The_Masterpiece_015.png",
     },
   ];
   module.exports = items;
