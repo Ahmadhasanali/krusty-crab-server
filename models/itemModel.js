@@ -18,6 +18,10 @@ const itemSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    status: {
+      type: Boolean,
+      require: true,
+    }
   },
   { timestamp: true }
 );

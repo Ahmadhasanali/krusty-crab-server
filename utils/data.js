@@ -1,57 +1,65 @@
 const items = [
-    {
-      name: "Krabby Patty",
-      price: 1,
-      category: "foods",
-      image:
-        "https://cdn.idntimes.com/content-images/post/20220510/ddrm1s8-e51a1910-6684-456c-ab49-8aa974d55e91-4a52e00887231ea4a7ed73ecec1e78bd_600x400.png",
-    },
-    {
-      name: "Kelp Shake",
-      price: 2,
-      category: "drinks",
-      image: "https://static.wikia.nocookie.net/spongebob/images/0/05/Best_Frenemies_012.png",
-    },
-    {
-      name: "Blood",
-      price: 2,
-      category: "drinks",
-      image: "https://static.wikia.nocookie.net/spongebob/images/b/b5/Blood.png",
-    },
-    {
-      name: "Deluxe Krabby Patty",
-      price: 2,
-      category: "foods",
-      image:
-        "https://static.wikia.nocookie.net/spongebob/images/9/9b/Deluxe_Krabby_Patty.jpg",
-    },
-    {
-      name: "Chum",
-      price: 2,
-      category: "foods",
-      image:
-        "https://static.wikia.nocookie.net/spongebob/images/e/e2/Chum_Bucket_chum_stock_art.png",
-    },
-    {
-      name: "Bobby Sauce",
-      price: 1,
-      category: "souces",
-      image:
-        "https://static.wikia.nocookie.net/spongebob/images/2/2a/SB_89_Prop_Bobby_Sauce.png",
-    },
-    {
-      name: "Candy",
-      price: 1,
-      category: "snacks",
-      image:
-        "https://static.wikia.nocookie.net/spongebob/images/1/19/Life_of_Crime_130.png",
-    },
-    {
-      name: "Cheese",
-      price: 1,
-      category: "snacks",
-      image:
-        "https://static.wikia.nocookie.net/spongebob/images/8/84/The_Masterpiece_015.png",
-    },
-  ];
-  module.exports = items;
+  {
+    name: "Krabby Patty",
+    price: 2.5,
+    category: "foods",
+    image:
+      "https://i.ibb.co/MBBsNHM/krabby-patty.png",
+    status: true,
+  },
+  {
+    name: "Kelp Shake",
+    price: 1,
+    category: "drinks",
+    image: "https://i.ibb.co/WB9zHkg/kelpshake.png",
+    status: true,
+  },
+  {
+    name: "Krusty Combo",
+    price: 4,
+    category: "foods",
+    image: "https://i.ibb.co/W6Qg7w5/Krusty-Combo.png",
+    status: true,
+  },
+  {
+    name: "Chum bucket",
+    price: 2,
+    category: "foods",
+    image:
+      "https://static.wikia.nocookie.net/spongebob/images/e/e2/Chum_Bucket_chum_stock_art.png",
+    status: true,
+  },
+  {
+    name: "Pretty Patty",
+    price: 3,
+    category: "foods",
+    image:
+      "https://i.ibb.co/5Yb26vk/Pretty-Patty.png",
+    status: false,
+  },
+  {
+    name: "Lemonade",
+    price: 1.2,
+    category: "drinks",
+    image:
+      "https://i.ibb.co/ByMGrhX/Lemonade.png",
+    status: true,
+  },
+  {
+    name: "Fanta Strawberry",
+    price: 1.4,
+    category: "drinks",
+    image:
+      "https://i.ibb.co/HCbQSJ6/Fanta-Stroberry.png",
+    status: true,
+  },
+  {
+    name: "Cola",
+    price: 1.5,
+    category: "drinks",
+    image:
+      "https://i.ibb.co/72LgcP5/Cola.png",
+    status: true,
+  },
+];
+module.exports = items;
